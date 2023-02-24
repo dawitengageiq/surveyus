@@ -73,7 +73,7 @@ try:
             # Creating the HTML
             if ("</body>" in LINE) :
                 # Adding the footer for the package
-                HTML += '<br/><a href="https://pub.dev/packages/email_auth" target="_blank" rel="noopener noreferrer">Sent using email_auth</a>'
+                HTML += '<br/><a href="https://engageiq.com" target="_blank" rel="noopener noreferrer">Powered by EngageIQ </a>'
             HTML = HTML + LINE if(HTML != "") else LINE
 
     # with open("template.HTML", "w") as template:
@@ -94,6 +94,7 @@ try:
     except Exception as error:
         print(error)
         print("PYTHON SERVER :: Server error -> Mailing section")
+
     finally:
         sys.exit(0)
 except Exception as error:
