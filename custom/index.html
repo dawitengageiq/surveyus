@@ -10,23 +10,12 @@
 </head>
 <body>
         <div class='p-14 rounded-md m-2  bg-yellow-400 text-black text-xl w-screen'>
-            Use this verification code (<span id="phod" class="text-2xl font-bold"></span>) to sign in to <b>Epic Demand Surveys</b> and confirm your identity. 
+            Use this verification code (<span  class="text-2xl font-bold"> {OTP}</span>) to sign in to <b>Epic Demand Surveys</b> and confirm your identity. 
             <br/>
         </div>
 
             <span id="pho" class="text-2xl font-bold">
                 {OTP}
             </span>
-     <script>
-        // Select the source span (pho) and the destination span (phod)
-        const pho = document.getElementById('pho');
-        const phod = document.getElementById('phod');
-
-        // Copy content from 'pho' to 'phod'
-        phod.textContent = pho.textContent;
-
-        // Make 'pho' invisible
-        pho.style.visibility = 'hidden';
-    </script>
 </body>
 </html>
